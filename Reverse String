@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public  class ReverseString {	
+	
+	     public static void main(String args[]) {
+	    	 
+	    	 String ReverseName = "";
+	    	 
+	Scanner scan = new Scanner (System.in);
+	
+	System.out.println("Enter name ");
+	
+	String name = scan.next();
+	
+	int len =name.length();//5
+	
+	
+	
+	for(int i = len-1; i>=0; i--) 
+	{
+		
+		ReverseName = ReverseName + name.charAt(i);
+		
+		
+		
+	}
+	System.out.println("My name is " + name + " My reverse name is " + ReverseName);
+	
+	}
+	
+}
