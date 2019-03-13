@@ -1,0 +1,26 @@
+package selenium;
+
+
+
+public  class Pallindrom  {
+	
+public static void main(String []args) {
+	int num = 121, s=0, r, t= num;
+	while (num>0) {
+		r = num%10; //1,2
+		num = num/10; // 12,1
+		s = s*10 + r;   //
+		} 
+	if (s==t) {
+			System.out.println("Pallindrom ");
+		
+	}
+		else {
+		System.out.println("not palindromm ");
+	}
+	
+		
+}
+
+
+}
