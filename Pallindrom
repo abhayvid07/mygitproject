@@ -5,7 +5,7 @@ package selenium;
 public  class Pallindrom  {
 	
 public static void main(String []args) {
-	int num = 121, s=0, r, t= num;
+	int num = 121, s=0, r, t= num;     // t = original number, s = reverse number
 	while (num>0) {
 		r = num%10; //1,2
 		num = num/10; // 12,1
