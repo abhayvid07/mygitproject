@@ -1,0 +1,59 @@
+package selenium;
+
+import java.util.Scanner;
+
+// Prime number is the number which is divisible by 1 or itself
+
+public  class PrimeNumberList {	
+	
+	     public static void main(String args[]) {
+	    	 
+	    	Scanner scan = new Scanner(System.in);
+	    	
+	    	System.out.println("Enter Number");
+	    	
+	    	int num = scan.nextInt();
+	    	
+	    		 int temp = 0;
+	    	 
+	    	 for (int i = 2; i<=num-1; i++) {
+	    		 
+	    		 if (num%i == 0) {
+	    		
+	    			temp = temp+1;
+	    			
+	    		 }
+	    	 } 
+	    		 if (temp>1) {
+	    			 System.out.println(num + " is not a prime number " );
+	    		 }
+	    		 
+	    	
+	    		 if (temp == 0) {
+	    			 System.out.println(num + " is prime Number  " );
+	    			 
+	    		 }
+	    		
+	    		 }
+	    		 
+	    		
+	    	 
+	    	 
+	    	 
+	    	 
+	}
+	
+
+	
+	
+	
+
+	
+
+
+
+ 
+
+
+	
+
