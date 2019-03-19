@@ -1,0 +1,41 @@
+package selenium;
+
+public  class Armstrong_Number  {
+	
+public static void main(String[] args) {
+	
+	 
+	 int num = 153;      
+	 int t1 = num;
+	 int leng = 0;
+	 
+	 while(t1 != 0) 
+	 {
+		 t1 = t1/10;
+		 leng = leng + 1;
+	}
+	 
+	int t2 =num, remainder, arm =0;
+	
+	while(t2!= 0) {
+		int multiply =1;
+		remainder = t2%10;
+		
+		for(int i = 1; i<=leng; i++)
+		{
+			
+			multiply = remainder * multiply;
+		}
+		
+		arm = arm + multiply;
+		 t2 = t2/10;
+	}
+	
+	if (arm == num) {
+		System.out.println("Number is armstrong ");
+	}
+	else {
+		System.out.println("Not an armstrong ");
+	}
+}
+}
