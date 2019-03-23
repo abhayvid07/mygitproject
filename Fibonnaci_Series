@@ -1,0 +1,21 @@
+		int firstNumber = 0;
+			int secondNumber = 1;
+			int finalNumber;
+			System.out.println(firstNumber + " " + secondNumber);
+			
+			for(int i = 1; i<= 20;i++) {
+				
+				finalNumber = firstNumber + secondNumber ;
+				System.out.println("" + finalNumber);
+
+				 firstNumber = secondNumber;
+				secondNumber=finalNumber;
+				
+					}
+			
+		
+		
+
+	}
+
+}
